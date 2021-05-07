@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style\style.css">
+	<link rel="icon" href="..\..\images\logo.png">
+	<title>Secvente</title>
+</head>
+<body style="background-color: #003333;">
+	<div class="box_sus">
+		<a href="..\..\Home.html">
+            <img src="..\..\images\logo.png" class="logo">
+        </a>
+        <p class="title1">ANYONE</p>
+        <p class="title2">CAN CODE</p>
+  		<a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+    </div>
+    <hr class="bara_sus">
+    <!--Content-->
+
+    <div class="contentBox">
+<!--Ce este o secventa-->
+        <h3 class="subtitle">Ce este o secventa?</h3>
+        <div class="defBox">
+            <p class="textP">
+                O <b>secventa</b> a unui <b>vector</b> este <b>o succesiune</b> de elemente <b>consecutive</b> din acel vector.<br>
+            </p>
+        </div><br>
+<!--Exemplu-->
+        <h3 class="subtitle">Exemplu:</h3>
+        <div class="defBox">
+            <p class="textP">
+                In imaginea de mai jos avem un <b>vector</b> cu 10 locuri.<br>
+                <img src="images\Secvente\1.png" class="images"><br>
+                Secventa determinata de cel mai mare element si cel mai mic element este:<br>
+                <img src="images\Secvente\3.png" class="images"><br>
+                Deoarece <b>2</b> este <b>cel mai mic</b> din <b>vector</b>, iar <b>95</b> este <b>cel mai mare</b>.<br>
+                <img src="images\Secvente\2.png" class="images"><br>
+            </p>
+        </div><br>
+<!--Prima Problema-->
+        <h3 class="subtitle">1# Problema</h1>
+        <div class="defBox">
+            <b class="textH">Cerinta:</b>
+            <div class="probBox">
+                <p class="textP">
+                    Se da un sir cu <b>n</b> elemente, numere naturale. Sa se calculeze <b>suma</b><br>
+                    elementelor din <b>secventa</b> determinata de <b>primul</b> si <b>ultimul</b><br>
+                    element <b>impar</b>.
+                </p>
+            </div><br>
+            <b class="textH">Date de intrare:</b>
+            <div class="probBox">
+                <p class="textP">
+                    Programul citeste de la tastatura numarul <b>n</b>, iar apoi cele <b>n</b> elemente<br>
+                    ale sirului, separate prin spatii. 
+                </p>
+            </div><br>
+            <b class="textH">Date de iesire:</b>
+            <div class="probBox">
+                <p class="textP">
+                    Programul afiseaza pe ecran <b>suma</b> elementelor din secventa.
+                </p>
+            </div><br>
+            <b class="textH">Restrictii:</b>
+            <div class="probBox">
+                <ul>
+                    <li class="textP">1 ≤<b> n </b>≤ 1000</li>
+                    <li class="textP">elementele sirului vor fi mai mici decat <b>1000</b></li>
+                    <li class="textP">contine <b>cel putin 2</b> elemente <b>impare</b></li>
+                </ul>
+            </div><br><br>
+            <!--Exemplu-->
+            <b class="textH">Exemplu:</b><br>
+            <p class="textP">-INTRARE:</p>
+            <div class="exBox">
+                <p class="textP">
+                    13<br>
+                    2 8 <b>11 4 20 3 7 94 32 55 23</b> 64 132
+                </p>
+            </div>
+            <p class="textP">-IESIRE:</p>
+            <div class="exBox">
+                <p class="textP">
+                    249
+                </p>
+            </div>
+            <p class="textP">-Explicatie:</p>
+            <div class="exBox">
+                <p class="textP">
+                    <b>11 + 4 + 20 + 3 + 7 + 94 + 32 + 55 + 23 = 249</b>
+                </p>
+            </div><br>
+            <!--Problema rezolvata-->
+            <script>
+                function showDiv1(){
+                    var prob = document.getElementById('prob1');
+                    if(prob.style.display === "none"){
+                        prob.style.display = "block";
+                    }
+                    else{
+                        prob.style.display = "none";
+                    }
+                }
+            </script>
+            <input type="button" class="butonAfisare" value="Rezolvare" onclick="showDiv1()">
+            <div id="prob1" style="display:none;" class="afisareBox">
+                <img src="images\Secvente\4.png" class="images">
+                <p class="textP">
+                    Citim <b>n</b> , reprezentand cele <b>n</b> elemente ale sirului.<br>
+                    Dupa asta declaram un vector de 1001 spatii, deoarece <b>n ≤ 1000</b> si in acest exemplu o sa incepem de la <b>i = 1</b>.<br>
+                </p><br><br>
+
+                <img src="images\Secvente\5.png" class="images">
+                <p class="textP">
+                    Declaram 2 variabile: <b>p</b> si <b>u</b>, ca sa pastram<br>
+                    in acestea <b>pozitiile</b> primului si ultimului <b>element impar</b>.<br><br>
+
+                    Parcurgem vectorul de la <b>inceput</b> pana la <b>final</b>, iar cand gasim primul element<br>
+                    <b>impar</b> ii punem <b>indicele</b>(pozitia) in <b>p</b> si iesim din <b>for</b>.
+                </p><br><br>
+
+                <img src="images\Secvente\6.png" class="images">
+                <p class="textP">
+                    Parcurgem vectorul de la <b>final</b> pana la <b>inceput</b>, iar cand gasim primul element<br>
+                    <b>impar</b> ii punem <b>indicele</b>(pozitia) in <b>u</b> si iesim din <b>for</b>.
+                </p><br><br>
+
+                <img src="images\Secvente\7.png" class="images">
+                <p class="textP">
+                    Declaram o variabila <b>suma</b> cu valoare <b>0</b> ca sa putem<br>
+                    <b>aduna</b> elementele <b>din secventa</b>.<br><br>
+
+                    Parcurgem <b>secventa</b> de la pozitia <b>p</b> pana la pozitia <b>u</b><br>
+                    si adunam la <b>suma</b> fiecare element din acea <b>secventa</b>.<br>
+                    Iar apoi afisam <b>suma</b>.<br><br>
+
+                    <br>
+                    Apasa <a href="https://onlinegdb.com/Sk3S_OaDu" target="_blank" style="color:inherit;"><b>aici</b></a> pentru a vedea codul.<br>
+                    Codul fara comentarii <a href="https://onlinegdb.com/rJf1YdTv_" target="_blank" style="color:inherit;"><b>aici</b></a>
+                </p>
+            </div>
+        </div><br><br><br><br><br><br>
+<!--A doua Problema-->
+        <h3 class="subtitle">2# Problema</h1>
+        <div class="defBox">
+            <b class="textH">Cerinta:</b>
+            <div class="probBox">
+                <p class="textP">
+                    Se da un sir cu <b>n</b> elemente, numere naturale. Sa se afiseze<br>
+                    pozitia de start, de final si cate elemente are secventa cu<br>
+                    <b>cele mai multe</b> elemente <b>egale</b>.
+                </p>
+            </div><br>
+            <b class="textH">Date de intrare:</b>
+            <div class="probBox">
+                <p class="textP">
+                    Programul citeste de la tastatura numarul <b>n</b>, iar apoi cele <b>n</b> elemente<br>
+                    ale sirului, separate prin spatii. 
+                </p>
+            </div><br>
+            <b class="textH">Date de iesire:</b>
+            <div class="probBox">
+                <p class="textP">
+                    Programul afiseaza pe ecran pozitia de start, pozitia de final si cate elemente are secventa.
+                </p>
+            </div><br>
+            <b class="textH">Restrictii:</b>
+            <div class="probBox">
+                <ul>
+                    <li class="textP">1 ≤<b> n </b>≤ 1000</li>
+                    <li class="textP">elementele sirului vor fi mai mici decat <b>1000</b></li>
+                </ul>
+            </div><br><br>
+            <!--Exemplu-->
+            <b class="textH">Exemplu:</b><br>
+            <p class="textP">-INTRARE:</p>
+            <div class="exBox">
+                <p class="textP">
+                    11<br>
+                    163 3 15 15 15 9 <b>8 8 8 8</b> 3
+                </p>
+            </div>
+            <p class="textP">-IESIRE:</p>
+            <div class="exBox">
+                <p class="textP">
+                    7 10 4
+                </p>
+            </div>
+            <p class="textP">-Explicatie:</p>
+            <div class="exBox">
+                <p class="textP">
+                    <b>Secventa are 4 elemente si incepe de pe pozitia 7 si merge pana la pozitia 10.</b>
+                </p>
+            </div><br>
+            <!--Problema rezolvata-->
+            <script>
+                function showDiv2(){
+                    var prob = document.getElementById('prob2');
+                    if(prob.style.display === "none"){
+                        prob.style.display = "block";
+                    }
+                    else{
+                        prob.style.display = "none";
+                    }
+                }
+            </script>
+            <input type="button" class="butonAfisare" value="Rezolvare" onclick="showDiv2()">
+            <div id="prob2" style="display:none;" class="afisareBox">
+                <img src="images\Secvente\4.png" class="images">
+                <p class="textP">
+                    Citim <b>n</b> , reprezentand cele <b>n</b> elemente ale sirului.<br>
+                    Dupa asta declaram un vector de 1001 spatii, deoarece <b>n ≤ 1000</b> si in acest exemplu o sa incepem de la <b>i = 1</b>.<br>
+                </p><br><br>
+
+                <img src="images\Secvente\8.png" class="images">
+                <p class="textP">
+                    Declaram <b>nrMax</b> ca sa tinem minte cate elemente are cea mai mare secventa cu elemente egale.<br>
+                    Declaram cu valoarea <b>1</b> deoarece programul va lua un singur element ca si o secventa.
+                </p><br><br>
+
+                <img src="images\Secvente\9.png" class="images">
+                <p class="textP">
+                    Parcurgem vectorul si luam fiecare element din el si il verificam cu elementele de dupa el<br>
+                    ca sa gasim o secventa.<br><br>
+
+                    Daca secvemta pe care am gasit-o are mai multe elemente decat cea mai mare secventa, atunci<br>
+                    aceasta secventa devine cea mai mare.
+                </p><br><br>
+
+                <img src="images\Secvente\10.png" class="images">
+                <p class="textP">
+                    Daca <b>nrMax</b> a ramas neschimbat, adica daca nu s-a gasit nici-o secventa se fa afisa <b>NU EXISTA</b>.<br>
+                    Dar daca s-a gasit o secventa, ii vom afisa pozitia de start, pozitia de final, si cate elemente are.<br><br>
+
+                    <br>
+                    Apasa <a href="https://onlinegdb.com/H1TBrFawd" target="_blank" style="color:inherit;"><b>aici</b></a> pentru a vedea codul.<br>
+                    Codul fara comentarii <a href="https://onlinegdb.com/HJ_aSKpwu" target="_blank" style="color:inherit;"><b>aici</b></a>
+                </p>
+            </div>
+        </div>
+<!-- End -->
+    </div>
+
+    <!--Footer-->
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+</body>
+</html>

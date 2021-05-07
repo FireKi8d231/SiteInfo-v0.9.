@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="basic3.css">
+    <link rel="icon" href="..\..\images\logo.png">
+    <title>Tipuri de operatori</title>
+</head>
+    <body class="tot">
+        <div class="box_sus">
+            <a href="..\..\Home.html">
+                <img src="images/logo.jpg"class="logo">
+            </a>
+            <p class="title1">ANYONE</p>
+            <p class="title2">CAN CODE</p>
+            <a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+        </div>
+        <hr class="bara_sus">
+
+        <div class="cutie">
+            <p class='textmare' style="text-align:center">Aflarea minimului și a maximului</p>
+            <ul><li class="text4">Pentru a afla maximul și minimul a doua numere, vom folosi structura if.</li>
+                <li class="text4"> Afisarea minimului dintre doua numere a si b:</li> 
+            </ul>
+            <p class="text6" style="text-align:center;">Metoda Ⅰ</p>
+            <div class="cutie2">
+<pre style="color:#d1d1d1;background:#000000;"> <span style="color:#008c00; ">1</span> <span style="color:#d2cd86; ">|</span><span style="color:#ffffff; background:#dd0000; ">#include</span> <span style="color:#b060b0; ">&lt;</span><span style="color:#e66170; font-weight:bold; ">iostream</span><span style="color:#b060b0; ">&gt;</span><span style="color:#9999a9; ">//introducem bibloteca</span>
+ <span style="color:#008c00; ">2</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">using</span> <span style="color:#e66170; font-weight:bold; ">namespace</span> <span style="color:#00dddd; ">std</span><span style="color:#b060b0; ">;</span>
+ <span style="color:#008c00; ">3</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">int</span> <span style="color:#e66170; font-weight:bold; ">main</span><span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">{</span>
+ <span style="color:#008c00; ">4</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">int</span> a<span style="color:#d2cd86; ">,</span> b<span style="color:#b060b0; ">;</span><span style="color:#9999a9; ">//declaram numerele</span>
+ <span style="color:#008c00; ">5</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">cin</span> <span style="color:#d2cd86; ">&gt;</span><span style="color:#d2cd86; ">&gt;</span> a <span style="color:#d2cd86; ">&gt;</span><span style="color:#d2cd86; ">&gt;</span> b<span style="color:#b060b0; ">;</span><span style="color:#9999a9; ">//inroducem numerele</span>
+ <span style="color:#008c00; ">6</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">if</span> <span style="color:#d2cd86; ">(</span>a <span style="color:#d2cd86; ">&lt;</span> b<span style="color:#d2cd86; ">)</span><span style="color:#e66170; font-weight:bold; ">cout</span> <span style="color:#d2cd86; ">&lt;</span><span style="color:#d2cd86; ">&lt;</span> a<span style="color:#b060b0; ">;</span><span style="color:#9999a9; ">//inseamna ca minimul este a deci il afisam</span>
+ <span style="color:#008c00; ">7</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">else</span> <span style="color:#e66170; font-weight:bold; ">cout</span> <span style="color:#d2cd86; ">&lt;</span><span style="color:#d2cd86; ">&lt;</span> b<span style="color:#b060b0; ">;</span><span style="color:#9999a9; ">//daca nu a este minimul inseamna ca este b-ul deci il afisam</span>
+ <span style="color:#008c00; ">8</span> <span style="color:#d2cd86; ">|</span><span style="color:#e66170; font-weight:bold; ">return</span> <span style="color:#008c00; ">0</span><span style="color:#b060b0; ">;</span>
+ <span style="color:#008c00; ">9</span> <span style="color:#d2cd86; ">|</span><span style="color:#b060b0; ">}</span>
+</pre></div>
+<p class="text6" style="text-align:center;">Metoda II</p>
+<div class="cutie2">
+    <pre style='color:#d1d1d1;background:#000000;'> <span style='color:#008c00; '>1</span> <span style='color:#d2cd86; '>|</span><span style='color:#ffffff; background:#dd0000; '>#include</span><span style='color:#b060b0; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>iostream</span><span style='color:#b060b0; '>></span>
+ <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>using</span> <span style='color:#e66170; font-weight:bold; '>namespace</span> <span style='color:#00dddd; '>std</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>3</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> <span style='color:#e66170; font-weight:bold; '>main</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+ <span style='color:#008c00; '>4</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> a<span style='color:#d2cd86; '>,</span> b<span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> a <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> b<span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>6</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#e66170; font-weight:bold; '>min</span><span style='color:#d2cd86; '>(</span>a<span style='color:#d2cd86; '>,</span> b<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>7</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>8</span> <span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+</pre>
+</div>
+    <ul>
+     <li><p class="text4">Desigur ca acest cod poate fi folosit si pentru aflarea maximului, schimband "<" cu ">" in metoda Ⅰ si schimband "min" cu "max"din metoda II</p></li>
+ </ul>
+          </div>
+                <div class="box">
+                    <div class="box1"><p class="textmare"><strong><strong>#354 n_maxim(Problema pbinfo)</strong></p>
+                         <p class="textmare"><strong>Cerința</strong></p>
+                         <p class="text">Se dau n numere întregi. Calculaţi cel mai mare dintre cele n numere date.</p>
+                         <p class="text">Restricții și precizări:</p>
+                         <p class="text">1 ≤ n ≤ 1000</p>
+                         <p class="text">cele n numere citite vor avea cel mult 9 cifre</p>
+                         <p class="textmare"><strong>Exemplu</strong></p>
+                         <p class="text">Intrare:5 7 6 9 6 8</p>
+                         <p class="text">Ieșire: 9 </p>
+                     </strong>
+                     </div>
+                     <br>
+                     <div class="cutie2">
+                        <pre style='color:#d1d1d1;background:#000000;'> <span style='color:#008c00; '>1</span> <span style='color:#d2cd86; '>|</span><span style='color:#ffffff; background:#dd0000; '>#include</span><span style='color:#b060b0; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>iostream</span><span style='color:#b060b0; '>></span><span style='color:#9999a9; '>// introducem biblioteca</span>
+ <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>using</span> <span style='color:#e66170; font-weight:bold; '>namespace</span> <span style='color:#00dddd; '>std</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>3</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> <span style='color:#e66170; font-weight:bold; '>main</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span><span style='color:#9999a9; '>//programul principal</span>
+ <span style='color:#008c00; '>4</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> n<span style='color:#d2cd86; '>,</span> maxi<span style='color:#d2cd86; '>,</span> x<span style='color:#d2cd86; '>,</span>a<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//declaram variabile</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> a<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//citim variabila n</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> x<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//citim prima valoare data</span>
+ <span style='color:#008c00; '>6</span> <span style='color:#d2cd86; '>|</span>maxi <span style='color:#d2cd86; '>=</span> x<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>// ii atribuim lui maxi prima valoare citita</span>
+ <span style='color:#008c00; '>7</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>for</span> <span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>int</span> i <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>2</span><span style='color:#b060b0; '>;</span> i <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>=</span> n<span style='color:#b060b0; '>;</span> i<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+ <span style='color:#008c00; '>8</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> x<span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>9</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>if</span> <span style='color:#d2cd86; '>(</span>maxi <span style='color:#d2cd86; '>&lt;</span> x<span style='color:#d2cd86; '>)</span> maxi <span style='color:#d2cd86; '>=</span> x<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//daca una dintre numerele citite este mai mare decat maxi, variabila maxi va primi</span>
+ <span style='color:#008c00; '>10</span><span style='color:#d2cd86; '>|</span><span style='color:#9999a9; '>valoarea acelui numar</span>
+ <span style='color:#008c00; '>11</span><span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+ <span style='color:#008c00; '>12</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> maxi<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//afisam maximul</span>
+ <span style='color:#008c00; '>13</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>14</span><span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+</pre>
+
+</div>
+<ul>
+       <li><p class="text4">Daca vrei sa acesezi codul fara comentariul, apasa <a class='text1'href="https://onlinegdb.com/r1QVzLVwu" target="_blank"><strong>aici</srong></a></></li>
+       </ul>
+                          </div>
+                                  
+                        </code>
+        </div>
+        
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+    </body>
+</html>

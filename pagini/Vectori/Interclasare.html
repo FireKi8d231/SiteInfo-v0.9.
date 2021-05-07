@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style\style.css">
+	<link rel="icon" href="..\..\images\logo.png">
+	<title>Sortare</title>
+</head>
+<body style="background-color: #003333;">
+	<div class="box_sus">
+		<a href="..\..\Home.html">
+            <img src="..\..\images\logo.png" class="logo">
+        </a>
+        <p class="title1">ANYONE</p>
+        <p class="title2">CAN CODE</p>
+  		<a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+    </div>
+    <hr class="bara_sus">
+    <!--Content-->
+
+    <div class="contentBox">
+<!--Interclasarea-->
+        <h3 class="subtitle">Interclasarea:</h3>
+        <div class="defBox">
+            <p class="textP">
+                Interclasarea <b>a 2 vectori</b> inseamna sa luam elementele celor 2 vectori si <b>sa le punem</b><br>
+                intr-un alt vector, <b>crescator / descrescator</b>.<br><br>
+                <b>Observatie:</b>Ca algoritmul sa mearga, elementele celor 2 vectori <b>trebuie</b> sa fie <br>
+                ordonate <b>crescator / descrescator</b> inainte de a face <b>interclasarea</b>.
+            </p>
+        </div><br>
+<!--Algorimtul pt interclasare-->
+        <h3 class="subtitle">Algoritmul pentru interclasare:</h3>
+        <div class="defBox">
+            <p class="textP">
+                In imaginea de mai joc avem 2 vectori, <b>A</b> si <b>B</b>, ordonati <b>crescator</b> si<br>
+                un vector <b>C</b> care este compus din cei doi vectori.<br> 
+                De asemenea <b>C</b> este ordonat <b>crescator</b>.<br>
+                <img src="images\Interclasare\1.png" class="images" style="width:40%"><br>
+            </p>
+             <script>
+                function showDiv1(){
+                    var prob = document.getElementById('prob1');
+                    if(prob.style.display === "none"){
+                        prob.style.display = "block";
+                    }
+                    else{
+                        prob.style.display = "none";
+                    }
+                }
+            </script>
+            <p class="textP">Daca vrei sa vezi cum s-a format vectorul <b>C</b> apasa pe buton.</p><br>
+            <input type="button" class="butonAfisare" value="Explicatie" onclick="showDiv1()">
+            <div id="prob1" style="display:none;" class="afisareBox">
+                <p class="textP">
+                    <img src="images\Interclasare\2.png" class="images" style="width:40%"><br>
+                    Pentru inceput <b>verificam primele elemente</b> din cei <b>2</b> vectori. Si ce verificam?<br>
+                    Verificam care este <b>mai mic</b>. Care este mai mic o <b>sa-l punem</b> in <b>al treilea vector</b>.<br><br><br>
+
+                    <img src="images\Interclasare\3.png" class="images" style="width:40%"><br>
+                    Acum <b>verificam din nou</b> care este mai mic. Care este <b>mai mic</b> il <b>punem</b> in al treilea vector.<br>
+                    Si tot vom verifica si vom pune in al treilea vector pana cand <b>unul</b> dintre cei <b>2</b> vectori s-a terminat.
+                    <br><br>
+                    <img src="images\Interclasare\4.png" class="images" style="width:40%"><br>
+                    <img src="images\Interclasare\5.png" class="images" style="width:40%"><br>
+                    <img src="images\Interclasare\6.png" class="images" style="width:40%"><br>
+                    <img src="images\Interclasare\7.png" class="images" style="width:40%"><br>
+                    Acum ca primul vector <b>s-a terminat</b>, <b>trebuie</b> sa punem tot ce <b>a mai ramas</b><br>
+                    din al doilea vector <b>in al treilea</b>.<br>
+                    <img src="images\Interclasare\8.png" class="images" style="width:40%"><br><br>
+                </p>
+            </div>
+        </div><br>
+<!--Implementare-->
+        <h3 class="subtitle">Implementarea:</h3>
+        <div class="defBox">
+            <p class="textP">
+                <img src="images\Interclasare\9.png" class="images" style="width:80%"><br>
+                Pentru inceput citim cei doi vectori.<br><br>
+            </p>
+            <hr style="border:1px solid black">
+
+            <p class="textP">
+                <img src="images\Interclasare\10.png" class="images" style="width:80%"><br>
+                Variabilele <b>i, j, k</b> sunt <b>indici</b> pentru cei <b>3</b> vectori.<br>
+                Al treilea vector, <b>c</b>, l-am declarat de <b>201 spatii</b> deoarece vectorul <b>a</b> are<br> 101 de spatii si vectorul <b>b</b> la fel, asa ca vectorul <b>c</b> o sa aiba cat amandoua adunate.<br><br>
+
+                Cand <b>toate elementele</b> din vectorul <b>a</b> sau din vectorul <b>b</b> vor fi <b>mutate</b> in <b>c</b>,<br>
+                indicele acelui vector <b>va fi mai mare</b> decat <b>lungimea</b> lui (<b>n / m</b>), de asta avem acel <b>while</b>.<br><br>
+
+                Ca sa facem interclasarea a <b>2 vectori ordonati crescator</b>, <b>trebuie</b> sa incepem<br>
+                al treilea vector cu <b>cele mai mici elemente</b>; de asta, daca elementul din vectorul <b>a</b><br>
+                este mai mic decat elementul din vectorul <b>b</b>, vom pune elementul din vectorul <b>a</b> in<br> al treilea vector, deoarece este cel mai mic.<br><br>
+
+                Acum, daca ar fi sa facem interclasarea a <b>2 vectori ordonati descrescator</b>, ar trebui<br>
+                doar sa schimbam la <b>if</b> din '<b><</b>' in '<b>></b>' ca sa-l punem pe <b>cel mai mare</b> intai.<br><br>
+            </p>
+            <hr style="border:1px solid black">
+
+            <p class="textP">
+                <img src="images\Interclasare\11.png" class="images" style="width:80%"><br>
+                Acum, deoarece <b>while-ul</b> s-a oprit din cauza ca un vector <b>'s-a terminat'</b>, trebuie sa introducem<br>
+                tot ce a mai ramas din celalalt vector.<br>
+                Deci, in poza de mai sus avem ca daca un indice <b>nu</b> a depasit lungimea vectorului sau,<br>
+                <b>ii vom trece</b> toate <b>elementele</b> care i-au ramas in al treilea vector.<br><br>
+
+                Iar la final afisam vectorul.<br><br>
+
+                Daca vrei sa vezi codul cu explicatii apasa <a href="https://onlinegdb.com/BJNpH8ZDO" target="_blank" style="color:inherit"><b>aici</b></a>.<br>
+                Codul fara explicatii <a href="https://onlinegdb.com/rycGLUbD_" target="_blank" style="color:inherit"><b>aici</b></a>.
+            </p>
+        </div><br>
+<!-- End -->
+    </div>
+
+    <!--Footer-->
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+</body>
+</html>

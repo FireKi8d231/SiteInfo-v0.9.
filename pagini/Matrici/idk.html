@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="idk.css">
+    <link rel="icon" href="..\..\images\logo.png">
+    <title>Matrici</title>
+    <style>
+    h2{
+        border-left: 3px solid;
+    }
+    </style>
+</head>
+    <body style="background-color: #009999">
+       <div class="box_sus">
+        <a href="..\..\Home.html">
+            <img src="..\NotiuniAvansate\images\logo.jpg" class="logo">
+        </a>
+        <p class="title1">ANYONE</p>
+        <p class="title2">CAN CODE</p>
+        <a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+    </div>
+    <hr class="bara_sus">
+
+        <div class="box1">
+        <p class="prop1"> Matricile (sau tablourile bidimensionale) sunt tablouri cu elemente de acelasi tip, dispuse pe linii si coloane. Fiecare element al matricii se afla pe o anumita linie si pe o anumita coloana.</p>
+        <br>
+        <p class="prop2"> Citirea unei matrice
+        </p>
+        <p class="prop1"> Citirea unei matrice se realizeaza citind elementele matricei, linie cu linie. Sa consideram de exemplu o matrice <code>a</code> cu <code>n</code> linii si <code>m</code> coloane (<code>n, m<=100</code>), cu elemente de tip <code>int</code>.
+        </p> 
+        <div class="bara_stanga"><code>int a[100][100],n,m,i,j;  //declararea matricei <br>
+            cout&lt;p&gt;&lt;&lt;p&gt;&lt;"n, m="; cin>>n>>m; <br>
+            for(i=0;i&lt;n;i++)  //parcurg matricea linie cu linie<br>
+                &nbsp;for(j=0;j&lt;m;j++)  //citesc elementele liniei i<br>
+                    &nbsp;&nbsp;{cout&lt;&lt;"a["&lt;&lt;i&lt;&lt;"]["&lt;&lt;j&lt;&lt;"]="; cin>>a[i][j];} 
+        </code>
+        </div>
+        <br>
+        <p class="prop2"> Afisarea unei matrice
+        </p>
+        <p class="prop1"> Afisarea unei matrice se realizeaza afisand elementele matricei, linie cu linie:
+        </p>
+        <div class="bara_stanga"><code>for(i=0;i&lt;n;i++)  //parcurg matricea linie cu linie<br>
+            { <br>
+            &nbsp;for(j=0;j&lt;m;j++)  //afisez componentele matricei<br>
+            &nbsp;&nbsp;cout&lt;&lt;a[i][j]&lt;&lt;' '; <br>
+            &nbsp;cout&lt;&lt;endl; //trec la linia urmatoare<br>
+            } <br>
+        </code>
+        </div>
+        <p class="prop2"> Parcurgerea unei matrice pe linii
+        </p>
+        <p class="prop1"> Unele probleme impun parcurgerea unei matrice linie cu linie si prelucrarea separata a elementelor de pe fiecare linie in parte. De exemplu, sa calculam suma elementelor de pe fiecare linie a unei matrice:
+        </p>
+        <div class="bara_stanga"><code>for(i=0;i&lt;n;i++) <br>
+            { <br>
+                &nbsp;for(s=0, j=0;j&lt;m;j++) <br>
+                &nbsp;&nbsp;s+=a[i][j]; <br>
+                &nbsp;cout&lt;&lt;"suma de pe linia "&lt;&lt;i&lt;&lt;": "&lt;&lt;s&lt;&lt;endl;<br>
+            } <br>
+        </code>
+        </div>
+        <p class="prop2"> Parcurgerea unei matrice pe coloane
+        </p>
+        <p class="prop1"> Exista probleme care impun parcurgerea unei matrice pe coloane si prelucrarea separata a elementelor de pe fiecare coloana in parte. De exemplu, sa calculam suma elementelor de pe fiecare coloana a unei matrice:
+        </p>
+        <div class="bara_stanga"><code>for(j=0;j&lt;m;j++) <br>
+            { <br>
+                &nbsp;for(s=0, i=0;i&lt;n;i++) <br>
+                &nbsp;&nbsp;s+=a[i][j]; <br>
+                &nbsp;cout&lt;&lt;"suma de pe coloana "&lt;&lt;j&lt;&lt;": "&lt;&lt;s&lt;&lt;endl;<br>
+            } <br>
+        </code>
+    </div>
+        <p class="prop2"> Probleme Rezolvate
+        </p>
+        <a target="_blank" class="prop1" href="https://www.pbinfo.ro/probleme/658/sumalinii" style="color:inherit;"> SumaLinii
+        </a>
+        <br>
+        <img src="images\doot.png" class="img_prob">
+        <br>
+        <a target="_blank" class="prop1" href="https://www.pbinfo.ro/probleme/776/cntlinii" style="color:inherit;"> Cntlinii
+        </a>
+        <br>
+        <img src="images\doot2.png" class="img_prob">
+    </div>
+    
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+    </body>
+</html>

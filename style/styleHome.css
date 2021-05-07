@@ -1,0 +1,175 @@
+.bara_sus{
+	border: 1px solid #000000;
+	position: relative;
+	top:10px;
+	margin-bottom: 20px;
+}
+.bara_jos{
+	border: 1px solid #000000;
+	position: relative;
+	bottom: 0px;
+	margin-bottom: 50px;
+}
+.box_sus{
+	position: relative;
+	width:100%;
+	height: 55px;
+	display: inline-block;
+}
+.buttonDev{
+	background-color: #00ace6;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	padding: 15px 26px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color:white;
+	font-family: Arial;
+	border:none;
+	outline:none;
+	border-radius: 10px;
+	box-shadow: 0 9px #004d66;
+}
+.buttonDev:hover {background-color: #007399;}
+.buttonDev:active{
+	background-color: #007399;
+	box-shadow: 0 5px #00394d;
+	transform: translateY(4px);
+}
+.titluSite{
+	position: relative;
+	text-align:center;
+	margin-top: 10px;
+}
+.contentBox{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+.contentBox1{
+	position: relative;
+	width: 48%;
+	display: inline-block;
+}
+.contentBox2{
+	position: absolute;
+	right: 0;
+	width: 50%;
+	display: inline-block;
+}
+.box1 {
+	position: relative;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1.5%;
+	width: 100%;
+	border: 5px solid black;
+	display: inherit;
+	border-radius: 15px;
+}
+.box2 {
+	position: relative;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1.5%;
+	width: 95%;
+	border: 5px solid black;
+	display: inline-block;
+	border-radius: 15px;
+}
+.box3 {
+	position: relative;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1.5%;
+	width: 100%;
+	border: 5px solid black;
+	display: inline-block;
+	border-radius: 10px;
+}
+.box4 {
+	position: relative;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1.5%;
+	width: 95%;
+	border: 5px solid black;
+	display: inline-block;
+	border-radius: 10px;
+}
+.box5 {
+	position: relative;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1.5%;
+	width: 95%;	
+	border: 5px solid black;
+	display: inline-block;
+	border-radius: 10px;
+}
+.box6 {
+	position: relative;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1.5%;
+	width: 100%;
+	border: 5px solid black;
+	display: inline-block;
+	border-radius: 10px;
+}
+.itemeLista{
+	padding: 5px;
+	margin:0;
+	font-size: 30px;
+	font-family: Arial;
+	color: #e6ffff;
+}
+.itemeListaTitlu{
+	color: #e6ffff;
+	font-size:40px;
+	margin-left:20px;
+	padding: 1px;
+	font-family: Arial;
+}
+.endPage{
+	position: relative;
+	font-size: 20px;
+	padding:0;
+	margin-left:26%;
+	font-family: Arial;
+	color: #001a1a;
+}
+.link{
+	text-decoration: inherit;
+	color: inherit;
+}
+.link:hover{cursor: pointer;}
+.title1{
+	position: absolute;
+	font-weight: bold;
+	padding:0;
+	font-size:35px;
+	margin:0;
+	left: 60px;
+	top:-5px;
+	font-family: Tahoma;
+}
+.title2{
+	position: absolute;
+	font-weight: bold;
+	top:30px;
+	padding:0;
+	font-size:35px;
+	margin:0;
+	left: 60px;
+	font-family: Tahoma;
+}
+.logo{
+	position:absolute; 
+	width:60px;
+	height: 70px;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Script for Smooth Scrolling-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+       } // End if
+      });
+    });
+</script>
+<!--End of script-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="intro2Style.css">
+	<link rel="icon" href="..\..\images\logo.png">
+	<title>Chestii C++</title>
+</head>
+<body style="background-color: #003333;">
+	<div class="box_sus" id="section0">
+		<a href="..\..\Home.html">
+            <img src="..\..\images\logo.png" class="logo">
+        </a>
+        <p class="title1">ANYONE</p>
+        <p class="title2">CAN CODE</p>
+  		<a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+    </div>
+    <hr class="bara_sus">
+<!--Content-->
+    <div class="contentBox">
+    	<div class="keybindBoxs">
+            <h3 class="subtitlu">Lucruri folositoare in C++</h3>
+            <div class="programBox1">
+                <ul>
+                    <b>
+                    <li class="text3"><a href="#section1" style="color:inherit">Prescurtari</a></li>
+                    <li class="text3"><a href="#section2" style="color:inherit">i++ sau ++i</a></li>
+                    <li class="text3"><a href="#section3" style="color:inherit">Functia system()</a></li>
+                    <li class="text3"><a href="#section4" style="color:inherit">Comentarii</a></li>
+                    <li class="text3"><a href="#section5" style="color:inherit">Declararea de tip global vs local</a></li>
+                    <li class="text3"><a href="#section6" style="color:inherit">Librarii importante</a></li>
+                    </b>
+                </ul>
+            </div>
+<!--Prescurtari-->
+            <h3 class="subtitlu" id="section1">Prescurtari
+                <a href="#section0" style="text-decoration: none"><span class="sageata">&#8593;</span></a>
+            </h3>
+            <div class="programBox1">
+                <p class="text3">
+                    In acest exemplu o sa folosesc <b>i</b> si <b>a</b> ca variabile dar poti folosi orice altceva.<br>
+                </p>
+                <ul>
+                    <li class="text3"><b>i += a;</b> ==> <b>i = i + a;</b></li>
+                    <li class="text3"><b>i /= a;</b> ==> <b>i = i / a;</b></li>
+                    <li class="text3"><b>i *= a;</b> ==> <b>i = i * a;</b></li>
+                    <li class="text3"><b>i %= a;</b> ==> <b>i = i % a;</b></li><br>
+                    <li class="text3"><b>i ++;</b> ==> <b>i = i + 1;</b></li>
+                    <li class="text3"><b>++ i;</b> ==> <b>i = i + 1;</b></li><br>
+                    <li class="text3"><b>i --;</b> ==> <b>i = i - 1;</b></li>
+                    <li class="text3"><b>-- i;</b> ==> <b>i = i - 1;</b></li>
+                </ul>
+            </div>
+<!--i++ sau ++i-->
+            <h3 class="subtitlu" id="section2">i++ sau ++i
+                <a href="#section0" style="text-decoration: none"><span class="sageata">&#8593;</span></a>
+            </h3>
+            <div class="programBox1">
+                <p class="text3">
+                    In acest exemplu o sa folosesc <b>i</b> ca variabila dar poti folosi orice altceva.<br><br>
+                    -<b>i++</b> = intai <b>foloseste variabila</b> cu valoare pe care o are si dupa <b>aduna 1</b> la ea<br>
+                    ex:<br>
+                    <img src="images\i++.png" class="image"><br>
+                    Acum daca ar fi sa-i dam <b>cout&lt;&lt;v[1];</b> o sa iasa valoarea 10, dar daca<br>
+                    ii dam <b>cout&lt;&lt;v[i];</b> unde <b>i = 2</b> o sa dea eroare deoarece nu i-am dat o valoare lui v[2].<br><br>
+
+                    -<b>++i</b> = intai <b>adauga 1</b> la valoarea pe care o avea si dupa <b>foloseste variabila</b><br>
+                    ex:<br>
+                    <img src="images\++i.png" class="image"><br>
+                    Acum daca ar fi sa-i dam <b>cout&lt;&lt;v[1];</b> o sa dea eroare deoarece nu i-am dat<br>
+                    o valoare lui v[1], dar daca dam <b>cout&lt;&lt;v[2];</b> o sa afiseze 52.<br><br><br>
+
+                    Conteaza unde este folosit, deoarece intr-un <b>for</b> chiar daca ai <br>-for(int i=1;i<=n;<b>i++</b>)<br>sau<br>
+                    -for(int i=1;i<=n;<b>++i</b>)<br>o sa o faca o instructiune tot de <b>n ori</b>.<br><br>
+                    Dar dupa cum ai vazut la inceput cand lucrezi cu vectori conteaza daca ai <b>i++</b> sau <b>++i</b>.<br><br><br>
+                    <b>Observatie:</b>La fel e si la <b>--i</b> sau <b>i--</b>.<br><br>
+                </p>
+            </div>
+<!--system cls-->
+            <h3 class="subtitlu" id="section3">Functia system()
+                <a href="#section0" style="text-decoration: none"><span class="sageata">&#8593;</span></a>
+            </h3>
+            <div class="programBox1">
+                <p class="text3">
+                    Functia <b>system()</b> este o parte din libraria standard doar ca ai<br>
+                    ai nevoie si de <b>#include &lt;stdlib.h&gt;</b> ca sa o folosesti.<br><br>
+                    Functia <b>system()</b> are multe comenzi, dar vreau sa va vorbesc despre comanda <b>CLS</b>.<br>
+
+                    Cand ai intr-un cod <b>system("CLS");</b> acesta va sterge tot ce a fost<br>
+                    scris in consola / fisier pana la comanda <b>CLS</b>.<br>
+                    CLS = Clear the Screen<br><br>
+
+                    <b>Observatie:</b> Daca <b>system("cls")</b> nu iti merge foloseste <b>system("clear")</b>.<br><br>
+
+                    Mai jos este un program care aduna 2 variabile citite de la tastatura.<br>
+                    Dupa ce le-am introdus, <b>system("CLS")</b> va sterge tot ce am scris in consola<br>
+                    si dupa va afisa suma celor 2 numere.<br><br>
+
+                    <b>Observatie:</b> Va sterge tot ce e in consola / fisier, nu va sterge si valorile<br>
+                    celor 2 numere introduse.<br>
+
+                    <img src="images\CLS.gif" style="width: 70%"><br><br>
+
+                    Daca vrei sa vezi codul apasa <a href="https://onlinegdb.com/H1ZtofNUd" target="_blank" style="color:inherit;"><b>aici</b></a>.
+                </p>
+            </div>
+<!--Comentarii-->
+            <h3 class="subtitlu" id="section4">Comentarii
+                <a href="#section0" style="text-decoration: none"><span class="sageata">&#8593;</span></a>
+            </h3>
+            <div class="programBox1">
+                <p class="text3">Exista 2 tipuri de comentarii:</p>
+                <ul>
+                    <li class="text3">Comentariu pe o singura linie</li>
+                    <img src="images\Comentarii1.png"><br><br>
+                    <li class="text3">Comentariu pe mai multe linii</li>
+                    <img src="images\Comentarii2.png"><br>
+                </ul><br>
+                <p class="text3">
+                    Comentariul pe <b>o singura linie</b> este de forma asta: <b>// [text] </b>.<br>
+                    Orice scrii pe acea linie dupa <b>//</b> o sa fie un comentariu si nu o sa se ia <br>
+                    in considerare cand dai <b>Run</b><br><br>
+                    Comentariul pe <b>mai multe linii</b> este de forma <b>/* [text] */</b>.<br>
+                    Si la fel ca la comentariul pe o singura linie, orice este scris intre <b>/* */</b><br>
+                    este un comentariu si nu o sa fie luat in considerare cand dai <b>Run</b>.<br><br>
+
+                    Comentariile pot fi folosite ca sa explici codul pe care l-ai facut,<br>
+                    sau poate preveni executare unor anumite parti din cod pentru a testa ceva.<br><br>
+                </p>
+            </div>
+<!--Declararea in exterior => 0 -->
+            <h3 class="subtitlu" id="section5">Declararea de tip global vs local
+                <a href="#section0" style="text-decoration: none"><span class="sageata">&#8593;</span></a>
+            </h3>
+            <div class="programBox1">
+                <p class="text3">
+                    Pe scurt cand declari <b>o variabila de tip global</b> si nu ii atribui o valoare, automat<br>
+                    ia <b>valoarea 0</b>, pe cand <b>o variabila de tip local</b> nu o sa aiba <b>nici-o valoare</b>.<br><br>
+                    <b>Observatie:</b>Daca nu-i dai o valoare unei variabile de tip local o sa-ti dea eroare.<br>
+                    <img src="images\TipLocal.png"><br><br>
+                    Ca o variabila sa fie <b>globala</b> trebuie sa fie declarata <b>inafara unei functii</b> ( ex: main() ).<br>
+                    De asemenea daca ai mai multe functii, variabila globala poate <b>fi folosita in fiecare</b>,<br>
+                    pe cand variabila locala poate fi folosita <b>doar in functia in care a fost declarata</b>.<br>
+                    <img src="images\TipGlobal.png"><br><br>
+                    In prima poza <b>a</b> este o variabila de <b>tip local</b> deoarece este in functia main().<br>
+                    In a doua poza <b>b</b> este o variabila de <b>tip global</b> deoarece este inafara functiei main().<br><br>
+
+                </p>
+            </div>
+<!-- Librarii importante-->
+            <h3 class="subtitlu" id="section6">Librarii importante
+                <a href="#section0" style="text-decoration: none"><span class="sageata">&#8593;</span></a>
+            </h3>
+            <div class="programBox1">
+                <h3 class="text3" style="font-size: 28px">- Libraria  &lt;cmath&gt;</h3>
+                <ul>
+                    <li class="text3"><b>pow(a, b)</b> - il ridica pe <b>a</b> la puterea <b>b</b></li>
+                    <li class="text3"><b>sqrt(a)</b> - radical de <b>a</b></li>
+                    <li class="text3"><b>cbrt(a)</b> - radical <b>cubic</b> sau <b>de ordin 3</b> de <b>a</b></li>
+                    <li class="text3"><b>abs(a)</b> - modul de <b>a</b></li>
+                </ul>
+                <h3 class="text3" style="font-size: 28px">- Libraria  &lt;algorithm&gt;</h3>
+                <ul>
+                    <li class="text3"><b>swap(a, b)</b> - schimba valorile lui <b>a</b> si lui <b>b</b> intre ele</li>
+                    <li class="text3">
+                        <b>sort(v, v + n)</b>, unde <b>v</b> este numele vectorului, iar <b>n</b> este marimea lui.<br>
+                        Apasa <a href="https://onlinegdb.com/SyVZPapP_" style="color:inherit;" target="_blank">aici</a> pentru a vedea sortarea crescatoare.<br>
+                        Apasa <a href="https://onlinegdb.com/BkkRLT6Pu" style="color:inherit;" target="_blank">aici</a> pentru a vedea sortarea descrescatoare.
+                    </li>
+                    <li class="text3"><b>min(a, b)</b> - o sa inapoieze pe cel cu valoare mai mica</li>
+                    <li class="text3"><b>max(a, b)</b> - o sa inapoieze pe cel cu valoare mai mare</li>
+                </ul>
+                <h3 class="text3" style="font-size: 28px">- Libraria  &lt;fstream&gt;</h3>
+                <ul>
+                    <li class="text3"><b>ifstream</b> - fisieru de intrare</li>
+                    <li class="text3"><b>ofstream</b> - fisieru de iesire</li>
+                    <li class="text3"><b>fstream</b> - fisieru de intrare si de iesire</li>
+                </ul>
+            </div>
+<!--==================-->
+        </div>
+    </div>
+<!--Footer-->
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+</body>
+</html>

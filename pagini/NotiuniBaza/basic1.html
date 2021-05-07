@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="basic1.css">
+    <link rel="icon" href="..\..\images\logo.png">
+    <title>Structuri repetitive</title>
+</head>
+    <body class="tot">
+        <div class="box_sus">
+            <a href="..\..\Home.html">
+                <img src="..\NotiuniAvansate\images\logo.jpg"class="logo">
+            </a>
+            <p class="title1">ANYONE</p>
+            <p class="title2">CAN CODE</p>
+            <a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+        </div>
+        <hr class="bara_sus">
+          
+        <div class="cutie">
+            <p class="text6" style="text-align:center;"><strong>Structuri repetitive</strong></p>
+            <br>
+            <ul>
+            <li><p class="text4">Structurile repetitive execută o instrucțiune de un anumit numar de ori sau cat timp o condiție este adevărată.</p></li>
+            </ul>
+            <ul>
+             <li><p class="text4"><strong>Structurile repetitive sunt de doua tipuri:</strong></p></li>
+             </ul>
+                <ul class="text4">
+                 <l style="margin-left: 40px;">-cu numar cunoscut de pasi (stim de la inceput de cate ori se va executa insrtuctiunea)<br>
+                </l>
+                <l style="margin-left: 40px;">
+                    -cu numar necunoscuti de pasi (instructiunea se va executa cat timp o conditie este adevarat)
+                </l>
+                </ul>
+                <ul>
+                <li><p class="text4"><strong>Structurile cu numar necunoscuti de pasi sunt de asemenea de doua tipuri:</strong></p></li>
+                </ul>
+                <ul class="text4">
+                    <l style="margin-left: 40px;">-cu test initial (verificam conditia si pe urma executam instructiunea) <br>
+                    </l>
+                    <l style="margin-left: 40px;">
+                    -cu test final (executam instructiunea si pe urma verificam conditia)
+                    </l> 
+                </ul> 
+                <ul>
+                <li><p class="text4"><strong>Exista 3 instructiuni repetitive: while, do/while si for.</strong></p></li>
+                </ul>
+                    <p class="text5"><strong>I. Instructiunea while</strong></p>
+                         <ul>
+                        <li><p class="text5">Aceasta instructiune are numar necunoscuti de pasi si test initial.</p></li>
+                    </ul>
+                                     <p class="text5"><strong>Sintaxa:</strong></p>
+                                    <div class="bara_stanga">
+                                    <p class="text5">
+                                        while (conditie)<br>
+                                        {<br>(instructiune)<br>}
+                                    </p>
+                                    </div>
+                    <p class="text5"><strong>II. Instructiunea do/while</strong></p>
+                        <ul>
+                        <li><p class="text5">Aceasta instructiune are numar necunoscut de pasi si un test final. <br></p></li>
+                    </ul>
+                        <p class="text5"><strong> Sintaxa:</strong> </p>
+                        <div class="bara_stanga">
+                        <p class="text5"> do{<br>
+                            (instructiuni)<br>
+                            }
+                            <br>while(conditie)<br>
+                        </p>
+                        </div>
+                    <p class="text5"><strong>III. Instructiunea for</strong></p>
+                    <ul>
+                    <li><p class="text5">Aceasta instructiune are numar necunoscuti de pasi si test final.</p></li>
+                </ul>
+                        <p class="text5"><strong>Sintaxa:</strong></p>
+                        <div class="bara_stanga">
+                        <p class="text5">for((declaram variabila);(conditie);(instructiune1))</p>
+                        <p class="text5">{<br>(instructiune2)<br>}</p>
+                        </div>
+                        <ul>
+                        <li>
+                        <p class="text5">Declararea variabilei se va executa o singura data la intrarea in for.</p><br></li>
+                        <ul>
+        </div>
+        <div class="box">
+            <div class="box1">
+            <p class="textmare"><strong>#1261 CatePare(Problema pbinfo)</p>
+            <p class="text5">Cerinta:</p>
+            <p class="text5">Se citesc numere de la tastatură până la apariția lui zero. Să se determine câte dintre ele erau pare.</p>
+            <p class="text5">Restrictii si precizari:</p>
+            <ul class="text5">
+                <l> numerele citite aparțin intervalului (-1.000.000,1.000.000);</l>
+                <l>în cazul în care niciun număr nu este par se va afișa mesajul NU EXISTA.</l>
+            </ul>
+            <p class="textmare">Exemplu:</p>
+            <p class="text5">Intrare:1 2 3 4 5 6 0</p>
+            
+            <p class="text5">Ieșire: 3</strong></p>
+            </div>
+            <br>
+                        <div class="cutie2">
+                            <pre style='color:#d1d1d1;background:#000000;'> <span style='color:#008c00; '>1</span> <span style='color:#d2cd86; '>|</span><span style='color:#ffffff; background:#dd0000; '>#include</span><span style='color:#b060b0; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>iostream</span><span style='color:#b060b0; '>></span><span style='color:#9999a9; '>// introducem biblioteca</span>
+ <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>using</span> <span style='color:#e66170; font-weight:bold; '>namespace</span> <span style='color:#00dddd; '>std</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>3</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> <span style='color:#e66170; font-weight:bold; '>main</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span><span style='color:#9999a9; '>//programul principal</span>
+ <span style='color:#008c00; '>4</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> x <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>,</span> nr<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//declaram o variabila x cu valoarea 1</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>while</span> <span style='color:#d2cd86; '>(</span>x <span style='color:#d2cd86; '>!</span><span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>)</span><span style='color:#9999a9; '>//verificam daca x este diferit de 0</span>
+ <span style='color:#008c00; '>6</span> <span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>{</span>
+ <span style='color:#008c00; '>7</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>if</span> <span style='color:#d2cd86; '>(</span>x <span style='color:#d2cd86; '>%</span> <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>=</span><span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>)</span> nr<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//verificam daca x este par.Daca este vom creste valoarea lui nr cu 1.</span>
+ <span style='color:#008c00; '>8</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> x<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//introducem un numar nou x</span>
+ <span style='color:#008c00; '>9</span> <span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+ <span style='color:#008c00; '>10</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>if</span> <span style='color:#d2cd86; '>(</span>nr <span style='color:#d2cd86; '>=</span><span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>)</span> <span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>NU EXISTA</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//daca nr are valoarea 0 inseamna ca nu a fost gasit nici un nr par, deci vom afisa "NU EXISTA"</span>
+ <span style='color:#008c00; '>11</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>else</span> <span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> nr<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//daca nu vom afisa valoarea lui nr</span>
+ <span style='color:#008c00; '>12</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>13</span><span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+</pre>
+</div>
+<br>
+      <ul>
+        <li ><p class="text4"> Daca vreți sa accesati codul fara comentariu, apasati<a class='text4' href="https://onlinegdb.com/BkIb5_0w_" target="_blank" style=" color:inherit;"><strong>aici</strong> </a></p></li>
+  </ul>
+        </div>
+<!--==-->
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+    </body>
+</html>

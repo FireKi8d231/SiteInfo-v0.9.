@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="basic1.css">
+    <link rel="icon" href="..\..\images\logo.png">
+    <title>Tipuri de operatori</title>
+</head>
+    <body class="tot">
+        <div class="box_sus">
+            <a href="..\..\Home.html">
+                <img src="images/logo.jpg"class="logo">
+            </a>
+            <p class="title1">ANYONE</p>
+            <p class="title2">CAN CODE</p>
+            <a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+        </div>
+        <hr class="bara_sus">
+          
+        <div class="cutie">
+            <p class="text6" style="text-align: center;"><strong>Tipuri de operatori</strong></p>
+            <ul>
+            <li><p class="text5">   Intre date pot fi folosite urmatoarele tipuri de operatori: aritmetici, rationali si logici.  </p></li>
+        </ul>
+            <table border="1px" cellspacing="10" cellpadding="10" class="tabel"  >
+                <tr>
+                    <th class="text4">Operatorii aritmetici</th>
+                    <th class="text4">Operatori rationali</th>
+                    <th class="text4">Operatorii logici</th>
+                </tr>
+                <tr>
+            
+                    <td class="text5"> 
+                        <p class="text5">Pentru a afla suma a doua numere, utilizam operatorul aritmetic + .</p>
+                                     <p class="text5">exemplu:</p>
+                                     <p class="text5">a+b (suma dintre a si b)</p>
+                                     <p class="text5">Pentru a afla diferenta a doua numere, utilizam operatorul aritmetic - .</p>
+                                     <p class="text5">exemplu:</p>
+                                     <p class="text5"> a-b (diferenta dintre a si b)</p>
+                                     <p class="text5">Pentru a afla catul impartirii a doua numere, utilizam operatorul aritmetic / .</p>
+                                     <p class="text5">exemplu:</p>
+                                     <p class="text5"> a/b (catul impartirii lui a la b)</p>
+                                     <p class="text5">10/2=5</p>
+                                     <p class="text5">7/3=2</p>
+                                     <p class="text5"> Pentru a afla restul impartirii a doua numere, utilizam operatorul aritmetic % .</p>
+                                     <p class="text5">a%b (restul impartirii lui a la b)</p>
+                                     <p class="text5"> 7%3=1 ,100%2=0</p>
+                                     <p class="text5">Utilizand operatoul aritmetic %, putem afla daca un numar este par sau impar.</p>
+                                     <p class="text5">  Daca a%b=1 (restul impartirii lui a la b este egal cu 1), vom deduce faptul ca numarul a este impar.</p>
+                                     <p class="text5">Daca a%b=0 (restul impartirii lui a la b este egal cu 0), vom deduce faptul ca numarul a este par si ca b este divizor al lui a.</p>
+                    </td>
+                    <td class="text"> <div class='tabel1'></div>
+                        <p class="text">Utilizam operatorii rationali pentru a marca relatia dintre doua date. </p>
+                                     <p class="text"> a < b (a este mai mic strict decat b) </p>
+                                     <p class="text"> a > b ( a este mai mare strict decat b)</p>
+                                     <p class="text"> a <=b( a este mai mare sau egal cu b)</p>
+                                     <p class="text"> a >=b( a este mai mare sau egal cu b)</p>
+                                     <p class="text">a==b( a este egal cu b)</p>
+                                     <p class="text">a!=b( a nu este egal cu b)</p>
+                    </td>
+                    <td class="text"> 
+                        <p class="text">In C++ vom scrie cuvantul "si" ca "&&" sau "and".</p>
+                                     <p class="text">In C++ vom scrie cuvantul "sau" ca "||" sau "or".</p>
+                                     <p class="text">In C++ vom scrie cuvantul "nu" (negatia) ca "not" sau "!".</p>   
+                    </td>
+                </tr> 
+            </table>
+        </div>
+        <div class="box">
+            <br>
+        <div class="box1"><p class="textmare"><strong>#1260 asii(Problema pbinfo)</p>
+                         <p class="text5">Cerința</p>
+                         <p class="text5">Se citesc două numere naturale. Afișați suma, diferenţa, produsul şi câtul lor, în această ordine, separate prin câte un spațiu.</p>
+                         <p class="text5">Restricții și precizări:</p>
+                         <p class="text5">cele două numere citite vor fi mai mici decât 500;</p>
+                         <p class="text5">din primul număr se va scădea al doilea;</p>
+                         <p class="text5">primul număr se va împărţi la al doilea; se va afișa câtul împărțirii întregi.</p>
+                         <p class="textmare">Exemplu</p>
+                         <p class="text5">Intrare: 15 3</p>
+                         <p class="text5">Ieșire: 18 12 45 5</strong></p>
+                     </div>
+                     <br>
+                       <div class="cutie2">
+                        <pre style='color:#d1d1d1;background:#000000;'> <span style='color:#008c00; '>1</span> <span style='color:#d2cd86; '>|</span><span style='color:#ffffff; background:#dd0000; '>#include</span><span style='color:#b060b0; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>iostream</span><span style='color:#b060b0; '>></span><span style='color:#9999a9; '>// introducem biblioteca</span>
+ <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> <span style='color:#e66170; font-weight:bold; '>main</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#9999a9; '>//programul principal</span>
+ <span style='color:#008c00; '>3</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> a<span style='color:#b060b0; '>;</span><span style='color:#e66170; font-weight:bold; '>int</span> b<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//declaram variabile</span>
+ <span style='color:#008c00; '>4</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span>a<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//citim variabila a</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span>b<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//citim variabila b</span>
+ <span style='color:#008c00; '>6</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span>a<span style='color:#d2cd86; '>+</span>b<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '> </span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span>a<span style='color:#d2cd86; '>-</span>b<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '> </span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span>a<span style='color:#d2cd86; '>*</span>b<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '> </span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span>a<span style='color:#d2cd86; '>/</span>b<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//afisam suma ,diferenta,produsul,catul</span>
+ <span style='color:#008c00; '>7</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>8</span> <span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+</pre>
+</div>                 
+    <ul>
+        <li ><p class="text4"> Daca vreți sa accesati codul fara comentariu, apasati<a class='text4' href="https://onlinegdb.com/rkTDMYRPu" target="_blank" style=" color:inherit;"><strong>aici</strong> </a></p></li>
+  </ul>
+ 
+        </div>
+        
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+    </body>
+</html>

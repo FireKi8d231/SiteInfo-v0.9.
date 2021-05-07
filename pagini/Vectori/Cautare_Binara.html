@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style\style.css">
+	<link rel="icon" href="..\..\images\logo.png">
+	<title>Cautarea binara</title>
+</head>
+<body style="background-color: #003333;">
+	<div class="box_sus">
+		<a href="..\..\Home.html">
+            <img src="..\..\images\logo.png" class="logo">
+        </a>
+        <p class="title1">ANYONE</p>
+        <p class="title2">CAN CODE</p>
+  		<a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+    </div>
+    <hr class="bara_sus">
+    <!--Content-->
+
+    <div class="contentBox">
+<!--Ce este cautarea binara-->
+        <h3 class="subtitle">Pentru ce este folosita cautarea binara</h3>
+        <div class="defBox">
+            <p class="textP">
+                Cautarea binara este un <b>algoritm</b> folosit pentru <b>a gasi</b> un element<br>
+                dintr-un sir (vector) ordonat <b>crescator / descrescator</b>.
+            </p>
+        </div><br>
+
+        <h3 class="subtitle">Algoritmul pentru cautarea binara:</h3>
+        <div class="defBox">
+            <p class="textP">
+                Pentru algoritm ai nevoie de <b>3</b> variabile:
+            </p>
+            <ul>
+                <li class="textP"><b>p</b> - cu valoare <b>1</b> la inceput, adica <b>prima pozitie</b> a vectorului</li>
+                <li class="textP"><b>u</b> - cu valoare <b>n</b> la inceput, adica <b>ultima pozitie</b> a vectorului</li>
+                <li class="textP"><b>mij</b> - care este <b>mijlocul sirului</b> =<b> (p+u) / 2 </b></li>
+            </ul><br>
+            <p class="subtitle">Exemplu:</p>
+            <p class="textP">
+                Pentru exemplu avem un vector de 10 elemente, <b>ordonate crescator</b>.<br>
+                <img src="images\CautareBinara\1.png" class="images"><br>
+                Noi trebuie sa aflam daca numarul <b>12</b> se afla in vector.<br><br>
+
+                Pe scurt, <b>sirul se va imparti la 2</b> si noi <b>vom lucram</b> pe <b>prima jumatate</b> sau pe <b>a doua jumatate</b>.<br>
+                Si asta se va tot intampla, iar sirul se va tot micsora.
+            </p><br><br>
+<!--Exempli-->
+            <script>
+                function showDiv1(){
+                    var prob = document.getElementById('prob1');
+                    if(prob.style.display === "none"){
+                        prob.style.display = "block";
+                    }
+                    else{
+                        prob.style.display = "none";
+                    }
+                }
+            </script>
+            <input type="button" class="butonAfisare" value="Rezolvare" onclick="showDiv1()">
+            <div id="prob1" style="display:none;" class="afisareBox">
+<!--Pasul 1-->
+                <p class="subtitle"><b>-Pasul 1</b></p><br>
+                <p class="textP">
+                    Pentru inceput avem:
+                </p>
+                <ul>
+                    <li class="textP" style="color: green;"> p = <b>1</b></li>
+                    <li class="textP" style="color: red;"> u = <b>n = 10</b></li>
+                    <li class="textP" style="color: blue;"> mij = <b>(p+u) / 2</b> = <b>5</b></li>
+                </ul>
+                <img src="images\CautareBinara\2.png" class="images">
+                <p class="textP">
+                    Daca <b>numarul</b> pe care il cautam <b>este mai mic</b> decat <b>numarul</b> de pe<br>
+                    pozitia <b>5</b>, care este mijlocul sirului, atunci <b>u = mij - 1</b>.<br>
+                    <br>
+                    Daca <b>numarul</b> este <b>mai mare</b> decat numarul de pe pozitia <b>5</b> atunci <b>p = mij + 1</b>.<br><br>
+
+                    In cazul acesta <b>12</b> este <b>mai mic</b> decat <b>18</b> deci <b>u = mij - 1</b>.
+                </p><br><br>
+                <hr style="border: dotted;">
+<!--Pasul 2-->
+                <p class="subtitle"><b>-Pasul 2</b></p><br>
+                <p class="textP">Acum avem:</p>
+                <ul>
+                    <li class="textP" style="color: green;"> p = <b>1</b></li>
+                    <li class="textP" style="color: red;"> u = <b>4</b></li>
+                    <li class="textP" style="color: blue;"> mij = <b>(p+u) / 2</b> = <b>2</b></li>
+                </ul>
+                <img src="images\CautareBinara\3.png" class="images">
+                <p class="textP">
+                    <b>La fel</b> ca si la <b>pasul 1</b> trebuie sa vedem <b>daca numarul pe care il cautam</b><br>
+                    este <b>mai mic</b> sau <b>mai mare</b> decat elementul de pe pozitia <b>mijlocie</b>.<br><br>
+
+                    Deoarece numarul cautat, adica <b>12</b>, este <b>mai mare</b> decat <b>9</b>, atunci <b>p = mij+1</b>
+                </p>
+                <hr style="border:dotted;">
+<!--Pasul 3-->
+                <p class="subtitle"><b>-Pasul 3</b></p><br>
+                <p class="textP">Acum avem:</p>
+                <ul>
+                    <li class="textP" style="color: green;"> p = <b>3</b></li>
+                    <li class="textP" style="color: red;"> u = <b>4</b></li>
+                    <li class="textP" style="color: blue;"> mij = <b>(p+u) / 2</b> = <b>3</b></li>
+                </ul>
+                <img src="images\CautareBinara\4.png" class="images">
+                <p class="textP">
+                    Acum <b>elementul cautat</b> este <b>egal</b> cu elementul de pe pozitia <b>mijlocie</b>, adica <b>numarul 12</b>.<br>
+                    Asta inseamna ca am gasit elementul.<br>
+                    <img src="images\CautareBinara\5.png" class="images"><br>
+                    <b>Observatie:</b> Acest algoritm merge atat timp cat <b>numarul nu este gasit</b> si cat timp <b>p <= u</b>.<br>
+                    Iar ca numarul sa fie <b>gasit</b>, elementul de pe <b>pozitia mijlocie</b> trebuie sa fie <b>egal</b> cu <b>numarul cautat</b>.<br><br>
+
+                    Aici se afla algoritmul mai detaliat:<br>
+                    <img src="images\CautareBinara\6.png" class="iamges"><br>
+                    Cand <b>numarul cautat</b> este mai <b>mic</b> decat numarul <b>din mijloc</b> luam prima jumatate <b>fara</b> numarul din mijloc.<br>
+                    Iar cand este mai <b>mare</b> luam a doua jumatate <b>fara</b> numarul din mijlocul.<br><br>
+
+                    Daca vrei sa vezi codul cu explicatii apasa <a href="https://onlinegdb.com/rkmmxLh8O" target="_blank" style="color:inherit;"><b>aici</b></a><br>
+                    Daca vrei sa vezi codul fara explicatii apasa <a href="https://onlinegdb.com/S1tlIwhIO" target="_blank" style="color:inherit;"><b>aici</b></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+</body>
+</html>

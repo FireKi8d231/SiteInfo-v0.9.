@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="basic1.css">
+    <link rel="icon" href="..\..\images\logo.png">
+    <title>Structuri de decizie</title>
+</head>
+    <body class="tot">
+        <div class="box_sus">
+            <a href="..\..\Home.html">
+                <img src="..\NotiuniAvansate\images\logo.jpg"class="logo">
+            </a>
+            <p class="title1">ANYONE</p>
+            <p class="title2">CAN CODE</p>
+            <a href="..\..\Devs.html" target="_blank" class="buttonDev">Devs</a>
+        </div>
+        <hr class="bara_sus">
+          
+        <div class="cutie">
+            <p class="text6" style="text-align: center;"><strong>Structuri de decizie</strong></p>
+            <ul>
+            <li><p class="text4">Structurile de decizie sau alternative execută o instrucțiune o singură dată dacă și numai dacă condiția respectivă este adevărată.</p></li>
+            <br>
+            <li><p class="text4">Exista 2 instructiuni de decizie: if/else si switch.</p></li>
+            </ul>
+                <p class="textmare"><strong>I. Instructiunea if/else</strong></p>
+                   <ul>
+                     <li><p class="text4">Această este cea mai utilizată instructiune de decizie și se executa astfel:Se verifică dacă o condiție este adevarata. În cazul in care este adevarată, se va executa o instructiune, in cazul contrar se va executa alta instructiune, sau in anumite cazuri nu se va executa nimic.</p>
+                     </li>
+                 </ul>
+                                     <p class="text4" style=" margin-left:50px;"><strong>Sintaxa:</strong></p>
+                                     <br>
+                                    <table style="width:50%; margin-left: 250px;">
+                                        <tr class="th">
+                                            <th class="th" style="font-size:20px;">Varianta I</th>
+                                            <th class="th" style="font-size:20px;">Varianta II</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="th" style="font-size:20px;">if (conditie)<br>
+                                                {<br>
+                                                (instructiune1)<br>
+                                                }<br>
+                                                else{<br>
+                                                (intructiune2)<br>
+                                                }</td>
+                                            <td class="th" style="font-size:20px;">if (conditie)<br>
+                                                {<br>
+                                                (instructiune)<br>
+                                                }<br></td>
+                                        </tr>
+                                    </table>
+
+
+                                    <ul>
+                                     <li><p class="text4">Putem observa ca instructiunea else nu este obligatorie.In acest caz ,daca conditia nu este adevarata nu se va executa nici o instructiune si doar va iesi din structura.</p></li>
+                                 </ul>
+            </div>
+        <div class="box">
+            <div class="box1">
+            <p class="textmare"><strong>#832 Nota(Problema pbinfo)</p>
+            <p class="text">Cerinta:</p>
+            <p class="text">Fiind dată nota unui elev să se afișeze dacă acesta este corigent sau promovat.</p>
+            <p class="textmare">Exemplu:</p>
+            <p class="text">Intrare: 5</p>
+            <p class="text">Ieșire: promovat<br></p></strong>
+        </div>
+        <br>
+               <div class="cutie2" style="width:80%; margin-left: 120px;">
+                <pre style='color:#d1d1d1;background:#000000;'> <span style='color:#008c00; '>1</span> <span style='color:#d2cd86; '>|</span><span style='color:#ffffff; background:#dd0000; '>#include</span><span style='color:#b060b0; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>iostream</span><span style='color:#b060b0; '>></span><span style='color:#9999a9; '>// introducem biblioteca</span>
+ <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>using</span> <span style='color:#e66170; font-weight:bold; '>namespace</span> <span style='color:#00dddd; '>std</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>3</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> <span style='color:#e66170; font-weight:bold; '>main</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span><span style='color:#9999a9; '>//programul principal</span>
+ <span style='color:#008c00; '>4</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> n<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//declaram o variabila n care reprezinta nota elevului</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> n<span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//introducem variabila n</span>
+ <span style='color:#008c00; '>6</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>if</span> <span style='color:#d2cd86; '>(</span>n <span style='color:#d2cd86; '>&lt;</span> <span style='color:#008c00; '>5</span><span style='color:#d2cd86; '>)</span> <span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>corigent</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//daca nota elevului este mai mica decat 5 programul va scrie corigent</span>
+ <span style='color:#008c00; '>7</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>else</span> <span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>promovat</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span><span style='color:#9999a9; '>//daca nu programul va scrie promovat</span>
+ <span style='color:#008c00; '>8</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>9</span> <span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+</pre>
+     </div>
+     <ul>
+      <li>
+      <p class="text4">Daca vreți sa accesati codul fara comentariu, apasati<a class='text4' href="https://onlinegdb.com/Hy-yG6aD_" target="_blank" style=" color:inherit;"><strong>aici</strong> </a></p></li>
+  </ul>
+
+                    <p class="textmare"><strong>II. Instructiunea switch</strong></p>
+                    <ul>
+                     <li> <p class="text4">Instrucțiunea switch permite executarea unor instrucțiuni, în funcție de egalitatea unei expresii cu anumite valori numerice constante:</p></li>
+                 </ul>
+                        <p class="text4" style=" margin-left:50px;"><strong> Sintaxa:</strong> </p>
+                    
+                        <p class="text5" style="width: 40%;border-width: 7px;border-style: groove;border-color: #b30000; margin-left: 250px;"> switch(expresie) <br>
+                            {<br>
+                                    case NrConstant1:<br>
+                                         Instructiune1;<br>
+                                         break;<br>
+                                    case NrConstanta2:<br>
+                                         Instructiune2;<br>
+                                         break;<br>
+                                    .....<br>
+                                    case NrConstantN:<br>
+                                         InstructiuneN;<br>
+                                         break;<br>
+                                    default:<br>
+                                         Instructiunedefault;<br>
+                                         break;<br>
+                                }<br>
+                            </p>
+                            <ul>
+                                <li><p class="text4">Instructiunea default nu este obligatorie, aceasta fiind executata numai daca expresia nu este egala cu nici o valoare constanta.<br>
+                                Instructiunea brake de asemenea nu este obligatorie. Daca aceasta nu este folosita intr-un case, programul va executa comenzile din toate cazurile viitoare pana la urmatorea instructiune brake intalnita sau pana la terminarea instructiunii switch.</li>
+                            </ul>
+                        </p>
+            <div class="box1">
+            <p class="textmare"><strong>#2606 Luniramase(Problema pbinfo)</p>
+            <p class="text">Cerinta:</p>
+            <p class="text">Se citește de la tastatură un număr natural ce reprezintă o lună a anului (dacă citim 3 ne referim la a treia lună, deci Martie). Programul va afișa (câte unul pe rând) numele lunilor rămase în acel an după cea citită. Se garantează că se introduce de la intrare o valoare cuprinsă între 1 și 11. Se recomandă utilizarea instrucțiunii switch.</p>
+            <p class="textmare">Exemplu:</p>
+            <p class="text">Intrare:9</p>
+            <p class="text">Ieșire:<br>
+             Octombrie<br>
+             Noiembrie<br>
+             Decembrie<br>
+         </strong>
+            </p>
+            </div>
+            <br>
+            <div class="cutie2">
+               <pre style='color:#d1d1d1;background:#000000;'> <span style='color:#008c00; '>1</span> <span style='color:#d2cd86; '>|</span><span style='color:#ffffff; background:#dd0000; '>#include</span> <span style='color:#b060b0; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>iostream</span><span style='color:#b060b0; '>></span>
+ <span style='color:#008c00; '>2</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>using</span> <span style='color:#e66170; font-weight:bold; '>namespace</span> <span style='color:#00dddd; '>std</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>3</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> <span style='color:#e66170; font-weight:bold; '>main</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+ <span style='color:#008c00; '>4</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>int</span> l<span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>5</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cin</span> <span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>></span> l<span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>6</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>switch</span> <span style='color:#d2cd86; '>(</span>l <span style='color:#d2cd86; '>+</span> <span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span><span style='color:#9999a9; '>// incepem de la l+1 deoarece vrem să afișăm lunile urmatoare </span>
+ <span style='color:#008c00; '>7</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>2</span><span style='color:#e34adc; '>:</span><span style='color:#9999a9; '>// in cazul in care l este egal cu 1 vom afisa tote cazurile de dupa doi(inclusiv 2)</span>
+ <span style='color:#008c00; '>8</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Februarie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>9</span> <span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>3</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>10</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Martie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>11</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>4</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>12</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Aprilie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span> 
+ <span style='color:#008c00; '>13</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>5</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>14</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Mai</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>15</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>6</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>16</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Iunie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span> 
+ <span style='color:#008c00; '>17</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>7</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>18</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Iulie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>19</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>8</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>20</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>August</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>21</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>9</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>22</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Septembrie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>23</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>10</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>24</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Octombrie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>25</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>11</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>26</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Noiembrie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>27</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>case </span><span style='color:#008c00; '>12</span><span style='color:#e34adc; '>:</span>
+ <span style='color:#008c00; '>28</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>cout</span> <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>&lt;</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Decembrie</span><span style='color:#008080; '>\n</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>29</span><span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+ <span style='color:#008c00; '>30</span><span style='color:#d2cd86; '>|</span><span style='color:#e66170; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+ <span style='color:#008c00; '>31</span><span style='color:#d2cd86; '>|</span><span style='color:#b060b0; '>}</span>
+</pre>
+</div>
+      <ul>
+      <li>
+      <p class="text4">Daca vreți sa accesati codul fara comentariu, apasati<a class='text4' href="https://onlinegdb.com/B1M3J6aDO" target="_blank" style=" color:inherit;"><strong>aici</strong> </a></p></li>
+  </ul>
+                     </div>
+
+<!--==-->
+    <hr class="bara_jos">
+    <div>
+        <h2 class="endPage">Toti participantii la acest proiect sunt elevi ai 
+            Colegiului National De Informatica Piatra Neamt
+        </h2>
+        </h2>
+        <img src="..\..\images/logo.png" style="margin-left: auto; 
+        position: relative;
+        margin-right: auto; 
+        width: 10%; 
+        display: block;
+        margin-bottom: 50px;
+        ">
+    </div>
+    </body>
+</html>

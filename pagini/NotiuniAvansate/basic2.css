@@ -1,0 +1,176 @@
+.bara_sus{
+    border: 1px solid #000000;
+    position: relative;
+    top:10px;
+    margin-bottom: 20px;
+}
+.box_sus{
+    position: relative;
+    width:100%;
+    height: 55px;
+    display: inline-block;
+}
+.buttonDev{
+    background-color: #0066cc;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    padding: 15px 26px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    box-shadow: 0 9px #004d66;
+}
+.buttonDev:hover {background-color: #0086b3;}
+.buttonDev:active{
+    background-color: #0086b3;
+    box-shadow: 0 5px #0086b3;
+    transform: translateY(4px);
+}
+.titluSite{
+    position: relative;
+    text-align:center;
+    margin-top: 10px;
+}
+.tot{
+     background-image:url('images/m.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+}
+.cutie{
+    position:relative;
+    background-color:#0086b3;
+    display:inline-block;
+    width:50%;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style:solid;
+    border-width: thick;
+    left:440px;
+}
+.text{
+    margin:0;
+    padding:10px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 10px;
+
+}
+.titlu{
+    text-align:center;
+    font-family:ambria;
+    font-size:120%;
+}
+.box{
+    position:relative;
+    background-color:#0086b3;
+    display:inline-block;
+    border-left-style: solid;
+    border-right-style:solid;
+    border-bottom-style:solid; 
+    border-width: thick;
+    width:50%;
+    left:440px;
+}
+.linie{
+    border-bottom:3px solid;
+    border-color: #002633;
+}
+.bara_jos {
+    border: 1px solid #000000;
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 50px;
+}
+.logo {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+}
+.title2 {
+    position: absolute;
+    font-weight: bold;
+    top: 30px;
+    padding: 0;
+    font-size: 35px;
+    margin: 0;
+    left: 60px;
+    font-family: Tahoma;
+}
+.title1 {
+    position: absolute;
+    font-weight: bold;
+    padding: 0;
+    font-size: 35px;
+    margin: 0;
+    left: 60px;
+    top: -5px;
+    font-family: Tahoma;
+}
+.endPage{
+    position: relative;
+    font-size: 20px;
+    padding:0;
+    margin-left:26%;
+    font-family: Arial;
+    color: #001a1a;
+}
+.tabel{
+    border: 1px solid black;
+}
+.text1{
+    margin:0;
+    padding:0;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 10px;
+    color: inherit;
+}
+.text3{
+    margin:0;
+    padding:0;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 8px;
+}
+.cutie2{
+    position:relative;
+    background-color:#000000;
+    margin-left:5px;
+    margin-right: 2px;
+    border-style: groove;
+    border-width: 7px;
+    border-color: coral;
+}
+.box1{
+  border-style: ridge;
+  border-width: 10px;
+  border-color: coral;
+  width: 50%;
+  margin-left:200px;  
+
+}
+.textmare{
+    margin:0;
+    padding:10px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 10px;
+    font-size:25px;
+}
+.text4{
+    margin:0;
+    padding:0px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 10px;
+    font-size:20px;
+}
+.text5{
+    margin:0;
+    padding:10px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 10px;
+    font-size:20px;
+
+}
